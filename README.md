@@ -8,12 +8,11 @@ Setup Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 
 6.  Create TF instance:                                            "conda create -n tensorflow python=3.7"
 7.  Install environment:                                           "conda install -c conda-forge tensorflow"
 8.  Install jupyter notebook:                                      "conda install jupyter"
+9.  Install pillow:                                                "conda install pillow"
 9.  Activate TF:                                                   "source activate tensorflow"
 10. Launch JN:                                                     "jupyter notebook"
 11. Open the file:                                                 "CNN.ipynb"
 
-When all steps up to and including #8 have been completed, you can start working with #9: activate TF and start the notebook.
-
-ISSUES: Train/Test Split of my example directory does not work, I tried using "validation_split".
+When all steps up to and including #9 have been completed, you can start working with #10: activate TF and start the notebook.
 
 TODOs: Create Deep CNN + use transfer learning from InceptionV3
