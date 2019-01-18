@@ -15,4 +15,5 @@ Setup Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 
 When all steps up to and including #8 have been completed, you can start working with #9: activate TF and start the notebook.
 
 ISSUES: Train/Test Split of my example directory does not work, I tried using "validation_split".
+
 TODOs: Create Deep CNN + use transfer learning from InceptionV3
