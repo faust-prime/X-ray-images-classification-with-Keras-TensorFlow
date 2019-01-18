@@ -9,10 +9,11 @@ Setup Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 
 7.  Install environment:                                           "conda install -c conda-forge tensorflow"
 8.  Install jupyter notebook:                                      "conda install jupyter"
 9.  Install pillow:                                                "conda install pillow"
-9.  Activate TF:                                                   "source activate tensorflow"
-10. Launch JN:                                                     "jupyter notebook"
-11. Open the file:                                                 "CNN.ipynb"
+10. Install SciPy:                                                 "conda install -c anaconda scipy"
+11. Activate TF:                                                   "source activate tensorflow"
+12. Launch JN:                                                     "jupyter notebook"
+13. Open the file:                                                 "CNN.ipynb"
 
-When all steps up to and including #9 have been completed, you can start working with #10: activate TF and start the notebook.
+When all steps up to and including #10 have been completed, you can start working with #11: activate TF and start the notebook.
 
 TODOs: Create Deep CNN + use transfer learning from InceptionV3
