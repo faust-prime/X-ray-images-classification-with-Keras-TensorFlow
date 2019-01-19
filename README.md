@@ -28,7 +28,7 @@ Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 18.04 
 1. Download Anaconda & install .dmg
 2. Start Anaconda Navigator
 3. Create TF environment (Tab "Environments)
-4. Select TF envoronment and Install keras, tensorflow, matplotlib and pillow unsing the "Search Packages" field
+4. Select TF environment and Install keras, tensorflow, matplotlib, nomkl and pillow unsing the "Search Packages" field
 5. Install Jupyter Notebook (Tab "Home")
 
 
