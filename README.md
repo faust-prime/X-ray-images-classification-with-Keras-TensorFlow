@@ -3,8 +3,10 @@
 ## About
 We are using the NIH X-ray raw dataset from  NIH Clinical Center:
 https://www.nih.gov/news-events/news-releases/nih-clinical-center-provides-one-largest-publicly-available-chest-x-ray-datasets-scientific-community
+
 The code is inspired by the cat vs. dog image classificaton from the Machine Learning Crash Course by Google Developers:
 https://developers.google.com/machine-learning/practica/image-classification/
+
 
 ## Setup
 Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 18.04 LTS):
@@ -19,10 +21,12 @@ Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 18.04 
 9.  Install pillow:                                                "conda install pillow".
 10. Install SciPy:                                                 "conda install -c anaconda scipy".
 
+
 ## Make
 1. Activate TF:                                                   "source activate tensorflow". 
 2. Launch JN:                                                     "jupyter notebook".
 3. Open .ipynb-file in JN:                                         "CNN.ipynb".
+
 
 ## TODO
 a. Create Deep CNN, 
