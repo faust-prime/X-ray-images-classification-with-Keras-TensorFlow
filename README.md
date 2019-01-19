@@ -17,7 +17,8 @@ Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 18.04 
 3.  Install pip depending on your Python Version:                  "conda install pip3".
 4.  Install Keras: 	                                               "pip3 install Keras".
 5.  Install TF:                                                    "pip3 install --upgrade tensorflow".  
-6.  Create TF instance:                                            "conda create -n tensorflow python=3.7" XOR "python3 -m pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.12.0-py3-none-any.whl".
+XOR "python3 -m pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.12.0-py3-none-any.whl".
+6.  Create TF instance:                                            "conda create -n tensorflow python=3.7" 
 7.  Install environment:                                           "conda install -c conda-forge tensorflow". 
 8.  Install jupyter notebook:                                      "conda install jupyter".
 9.  Install pillow:                                                "conda install pillow".
