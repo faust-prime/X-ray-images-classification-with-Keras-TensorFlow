@@ -29,7 +29,8 @@ Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 18.04 
 
 
 ## TODO
-a. Create Deep CNN, 
-b. Droput Layer, 
-c. Less image downscaling (taget_size), 
-d. Transfer learning from InceptionV3 (cut at mixed7 layer), improve GPU (cuDNN for Nvidia). 
+1. Create Deep CNN,
+2. Droput Layer, 
+3. Less image downscaling (taget_size), 
+4. Transfer learning from InceptionV3 (cut at mixed7 layer), 
+5. improve GPU (cuDNN for Nvidia). 
