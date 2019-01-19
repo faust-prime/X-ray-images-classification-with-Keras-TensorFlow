@@ -8,7 +8,9 @@ The code is inspired by the cat vs. dog image classificaton from the Machine Lea
 https://developers.google.com/machine-learning/practica/image-classification/
 
 
-## Setup
+## Setup Anaconda, TensorFlow, Keras and JupyterNotebook
+
+### Linux (executed on Ubuntu 18.04.1 LTS)
 Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 18.04 LTS):
 1.  Download Anaconda & install the .sh-file by terminal:          "bash filename.sh".
 2.  Validate installation, start AnacondaNavigator:                "anaconda-navigator".
@@ -19,7 +21,15 @@ Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 18.04 
 7.  Install environment:                                           "conda install -c conda-forge tensorflow".
 8.  Install jupyter notebook:                                      "conda install jupyter".
 9.  Install pillow:                                                "conda install pillow".
-10. Install SciPy:                                                 "conda install -c anaconda scipy".
+10. Install matplotlib                                             "conda install matplotlib"
+11. Install SciPy:                                                 "conda install -c anaconda scipy".
+
+### MacOS
+1. Download Anaconda & install .dmg
+2. Start Anaconda Navigator
+3. Create TF environment (Tab "Environments)
+4. Select TF envoronment and Install keras, tensorflow, matplotlib and pillow unsing the "Search Packages" field
+5. Install Jupyter Notebook (Tab "Home")
 
 
 ## Make
