@@ -28,7 +28,7 @@ Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 18.04 
 3. Open .ipynb-file in JN:                                         "CNN.ipynb".
 
 
-## TODO
+## Improve
 1. Create Deep CNN,
 2. Droput Layer, 
 3. Less image downscaling (taget_size), 
