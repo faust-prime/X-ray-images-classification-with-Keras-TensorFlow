@@ -25,7 +25,7 @@ Setup Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 
 13. Open file in JN:                                               "CNN.ipynb".
 
 ## TODO
-1. Create Deep CNN, 
-2. Droput Layer, 
-3. less image downscaling (taget_size), 
-4. transfer learning from InceptionV3 (cut at mixed7 layer), improve GPU (cuDNN for Nvidia). 
+a. Create Deep CNN, 
+b. Droput Layer, 
+c. less image downscaling (taget_size), 
+d. transfer learning from InceptionV3 (cut at mixed7 layer), improve GPU (cuDNN for Nvidia). 
