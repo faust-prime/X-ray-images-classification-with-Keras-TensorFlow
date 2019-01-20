@@ -1,47 +1,27 @@
-# NIX x-ray images classificaton
+# NIH x-ray images classificaton
 
 ## About
-We are using the NIH X-ray raw dataset from  NIH Clinical Center:
-https://www.nih.gov/news-events/news-releases/nih-clinical-center-provides-one-largest-publicly-available-chest-x-ray-datasets-scientific-community
-
-The code is inspired by the cat vs. dog image classificaton from the Machine Learning Crash Course by Google Developers:
-https://developers.google.com/machine-learning/practica/image-classification/
+We are using the NIH X-ray raw dataset at [NIH Clinical Center](https://www.nih.gov/news-events/news-releases/nih-clinical-center-provides-one-largest-publicly-available-chest-x-ray-datasets-scientific-community). The code is inspired by the cat vs. dog image classificaton at [Machine Learning Crash Course by Google Developers](https://developers.google.com/machine-learning/practica/image-classification/).
 
 
 ## Setup Anaconda, TensorFlow, Keras and JupyterNotebook
+Tested in Ubuntu Linux and Mac-OS.
 
-### Linux (executed on Ubuntu 18.04.1 LTS)
-Anaconda, pip, TensorFlow, Keras and Jupyter Notebook (executed in Ubuntu 18.04 LTS):
-1.  Download Anaconda & install the .sh-file by terminal:          "bash filename.sh".
-2.  Validate installation, start AnacondaNavigator:                "anaconda-navigator".
-3.  Install pip depending on your Python Version:                  "conda install pip3".
-4.  Install Keras: 	                                               "pip3 install Keras".
-5.  Install TF:                                                    "pip3 install --upgrade tensorflow".  
-XOR "python3 -m pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.12.0-py3-none-any.whl".
-6.  Create TF instance:                                            "conda create -n tensorflow python=3.7" 
-7.  Install environment:                                           "conda install -c conda-forge tensorflow". 
-8.  Install jupyter notebook:                                      "conda install jupyter".
-9.  Install pillow:                                                "conda install pillow".
-10. Install matplotlib                                             "conda install matplotlib"
-11. Install SciPy:                                                 "conda install -c anaconda scipy".
-
-### MacOS
-1. Download Anaconda & install .dmg
-2. Start Anaconda Navigator
-3. Create TF environment (Tab "Environments)
-4. Select TF environment and Install keras, tensorflow, matplotlib, nomkl and pillow unsing the "Search Packages" field
-5. Install Jupyter Notebook (Tab "Home")
+1. Download and install Anaconda   "Linux terminal: bash filename.sh",
+2. Start Anaconda-Navigator:       "Linux terminal: anaconda-navigator",
+3. Create TF environment (Tab "Environments") or multiple for GPU-configurations,
+4. Select TF environment and Install keras, tensorflow, matplotlib, nomkl and pillow unsing the "Search Packages" field,
+5. Install Jupyter Notebook (Tab "Home").
 
 
-## Make
-1. Activate TF:                                                   "source activate tensorflow". 
-2. Launch JN:                                                     "jupyter notebook".
-3. Open .ipynb-file in JN:                                         "CNN.ipynb".
+## Launch
+1. Activate TF environment in (Tab "Environments"),
+2. Launch JN (Tab "Home"),
+3. Open "CNN.ipynb"-file in Jupyter Notebook.
 
 
 ## Improve
 1. Create Deep CNN,
-2. Droput Layer, 
-3. Less image downscaling (taget_size), 
-4. Transfer learning from InceptionV3 (cut at mixed7 layer), 
-5. improve GPU (cuDNN for Nvidia). 
+2. add Droput Layer, 
+3. Less image-downscaling (variable: target_size) depending on machine, 
+4. Create Transfer learning CNN from InceptionV3 by cutting at "mixed7" layer. 
