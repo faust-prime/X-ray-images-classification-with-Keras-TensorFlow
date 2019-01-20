@@ -15,9 +15,9 @@ Tested in Ubuntu Linux and Mac-OS:
 
 
 ## Run
-1. Activate TF environment (Tab "Environments"),
-2. Launch Jupyter Notebook (Tab "Home"),
-3. Open "CNN.ipynb"-file in Jupyter Notebook Browser-Tab and run all cells starting at the top.
+1. Activate TF environment (tab "Environments"),
+2. Launch Jupyter Notebook (tab "Home"),
+3. Open "CNN.ipynb"-file inside the Jupyter Notebook and run all cells starting at the top.
 
 
 ## Improve
