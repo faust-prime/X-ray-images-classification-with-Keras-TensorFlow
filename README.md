@@ -6,12 +6,13 @@ We are using the ChestXray14 raw chest x-ray dataset at [NIH Clinical Center](ht
 
 ## Requirements
 Tested in Ubuntu 18.04.1 and MacOS:
-0. Download image data from [ChestXray14 source](https://nihcc.app.box.com/v/ChestXray-NIHCC) and decompress,
-1. Download and install Anaconda,
-2. Start Anaconda Navigator,
-3. Create TensorFlow environment (Tab "Environments"),
-4. Select TensorFlow environment and install: keras, tensorflow, matplotlib, nomkl and pillow,
-5. Install Jupyter Notebook (Tab "Home").
+
+1. Download image data from [ChestXray14 source](https://nihcc.app.box.com/v/ChestXray-NIHCC) and decompress,
+2. Download and install Anaconda,
+3. Start Anaconda Navigator,
+4. Create TensorFlow environment (Tab "Environments"),
+5. Select TensorFlow environment and install: keras, tensorflow, matplotlib, nomkl and pillow,
+6. Install Jupyter Notebook (Tab "Home").
 
 
 ## Run
