@@ -1,0 +1,54 @@
+Epoch 1/15
+  49/1714 [..............................] - ETA: 9:55 - loss: 5.3513 - categorical_accuracy: 0.6520
+---------------------------------------------------------------------------
+ResourceExhaustedError                    Traceback (most recent call last)
+<ipython-input-9-091f111a2407> in <module>
+      4     validation_data = validation_generator,
+      5     validation_steps = validation_generator.samples // batch_size,
+----> 6     epochs = epochs)
+
+~/anaconda3/envs/GPU/lib/python3.6/site-packages/tensorflow/python/keras/engine/training.py in fit_generator(self, generator, steps_per_epoch, epochs, verbose, callbacks, validation_data, validation_steps, class_weight, max_queue_size, workers, use_multiprocessing, shuffle, initial_epoch)
+   2175         use_multiprocessing=use_multiprocessing,
+   2176         shuffle=shuffle,
+-> 2177         initial_epoch=initial_epoch)
+   2178 
+   2179   def evaluate_generator(self,
+
+~/anaconda3/envs/GPU/lib/python3.6/site-packages/tensorflow/python/keras/engine/training_generator.py in fit_generator(model, generator, steps_per_epoch, epochs, verbose, callbacks, validation_data, validation_steps, class_weight, max_queue_size, workers, use_multiprocessing, shuffle, initial_epoch)
+    174 
+    175         outs = model.train_on_batch(
+--> 176             x, y, sample_weight=sample_weight, class_weight=class_weight)
+    177 
+    178         if not isinstance(outs, list):
+
+~/anaconda3/envs/GPU/lib/python3.6/site-packages/tensorflow/python/keras/engine/training.py in train_on_batch(self, x, y, sample_weight, class_weight)
+   1938 
+   1939       self._make_train_function()
+-> 1940       outputs = self.train_function(ins)
+   1941 
+   1942     if len(outputs) == 1:
+
+~/anaconda3/envs/GPU/lib/python3.6/site-packages/tensorflow/python/keras/backend.py in __call__(self, inputs)
+   2984 
+   2985     fetched = self._callable_fn(*array_vals,
+-> 2986                                 run_metadata=self.run_metadata)
+   2987     self._call_fetch_callbacks(fetched[-len(self._fetches):])
+   2988     return fetched[:len(self.outputs)]
+
+~/anaconda3/envs/GPU/lib/python3.6/site-packages/tensorflow/python/client/session.py in __call__(self, *args, **kwargs)
+   1437           ret = tf_session.TF_SessionRunCallable(
+   1438               self._session._session, self._handle, args, status,
+-> 1439               run_metadata_ptr)
+   1440         if run_metadata:
+   1441           proto_data = tf_session.TF_GetBuffer(run_metadata_ptr)
+
+~/anaconda3/envs/GPU/lib/python3.6/site-packages/tensorflow/python/framework/errors_impl.py in __exit__(self, type_arg, value_arg, traceback_arg)
+    526             None, None,
+    527             compat.as_text(c_api.TF_Message(self.status.status)),
+--> 528             c_api.TF_GetCode(self.status.status))
+    529     # Delete the underlying status object from memory otherwise it stays alive
+    530     # as there is a reference to status from this from the traceback due to
+
+ResourceExhaustedError: OOM when allocating tensor with shape[430336,512] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[{{node training/Adam/mul_32}} = Mul[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"](training/Adam/sub_20, training/Adam/gradients/dense/MatMul_grad/MatMul_1)]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
